@@ -6,7 +6,8 @@
 <body>
 
 <script type="text/javascript">
-    window.ymConfig = {"bot":"x1645430825645","host":"https://chat.11032025.xyz/", "useSecureUid": true};
+    var bot = new URLSearchParams(window.location.search).get('bot') || 'x1645430825645'
+    window.ymConfig = {"bot":bot,"host":"https://chat.11032025.xyz/", "useSecureUid": true};
     (function() {
         var w = window,
             ic = w.YellowMessenger;
