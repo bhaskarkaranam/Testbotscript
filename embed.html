@@ -7,7 +7,8 @@
 
 <script type="text/javascript">
     var bot = new URLSearchParams(window.location.search).get('bot') || 'x1645430825645'
-    window.ymConfig = { "bot":bot, "host":"https://r4.cloud.yellow.ai", "useSecureUid": true };
+    var region = new URLSearchParams(window.location.search).get('region') || '';
+    window.ymConfig = { "bot":bot, "host":`https://${region}cloud.yellow.ai`, "useSecureUid": true };
     (function() {
         var w = window,
             ic = w.YellowMessenger;
